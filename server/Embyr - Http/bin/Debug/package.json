@@ -1,0 +1,14 @@
+{
+  "name": "embyr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "HimalP, MichaelP",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^7.1.9"
+  }
+}

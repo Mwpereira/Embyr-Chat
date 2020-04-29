@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link type="text/css" href="index.css" rel="stylesheet"> 
+    <title>Simple login</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+    <script>
+      $(document).ready(function(){
+        var user,pass;
+        $("#submit").click(function(){
+          user=$("#user").val();
+          pass=$("#password").val();
+          $.post("http://99.227.48.179:8000/login%22,%7Buser: Michael, password: 123}, function(data){
+            if(data==='done')
+              {
+                alert("Mwp");
+              }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hello people !</h1>
+    <input type="TEXT" id="user" size="40"><br>
+    <input type="password" id="password" size="40"><br>
+    <input type="button" id="submit" value="Submit">
+  </body>
+</html>

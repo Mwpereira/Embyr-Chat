@@ -1,0 +1,50 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/imgs/background.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    height: 100%;
+    position: relative;
+    top: -80px;
+    
+}
+
+#submit-btn{
+    background-color: rgba(0, 255, 110, 0.568);
+    justify-content: center;
+    margin-top: 15px;
+    border:none;
+    border-radius: 10px;
+}
+
+.inputbox{
+    width: 16em;
+    height: 2.5em;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+}
+
+#logo{
+    width: 100px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.xx{
+    background-color: red;
+}

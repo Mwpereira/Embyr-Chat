@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link type="text/css" href="../assets/css/index.css" rel="stylesheet">
+    <link type="text/css" href="../assets/css/flame.css" rel="stylesheet">
+    <title>Embyr</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div style="position:relative;" class="fire">
+                <div class="fire-left">
+                    <div class="main-fire"></div>
+                    <div class="particle-fire"></div>
+                </div>
+                <div class="fire-main">
+                    <div class="main-fire"></div>
+                    <div class="particle-fire"></div>
+                </div>
+                <div class="fire-right">
+                    <div class="main-fire"></div>
+                    <div class="particle-fire"></div>
+                </div>
+                <div class="fire-bottom">
+                    <div class="main-fire"></div>
+                </div>
+            </div>
+            <p id="title">Embyr</p>
+
+
+            <div id="actions">
+                <input class="action-btn" id="login-btn" value="Login" type="submit"
+                    onclick="javascript:location.href='login.html'">
+                <input class="action-btn" id="signup-btn" value="Register" type="submit"
+                    onclick="javascript:location.href='signup.html'">
+            </div>
+
+
+
+
+
+            <!-- Author Links -->
+            <div id="authors">
+                <div class="author-box" id="michael-link">
+                    <p class="author-name">Michael</p>
+                    <img class="icon" onclick="openLink('https://www.linkedin.com/in/michael-pereira-0237a0193/')"
+                        src="../assets/imgs/linkedin.png" />
+                    <img class="icon" onclick="openLink('https://github.com/Mwpereira')"
+                        src="../assets/imgs/github.png">
+                </div>
+
+                <div class="author-box" id="himal-link">
+                    <p class="author-name">Himal</p>
+                    <img class="icon" onclick="openLink('https://www.linkedin.com/in/himalpatel9/')"
+                        src="../assets/imgs/linkedin.png" />
+                    <img class="icon" onclick="openLink('https://github.com/HimalP')" src="../assets/imgs/github.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- Updates -->
+        <div id="updates">
+
+        </div>
+
+
+    </div>
+
+    <script>
+        let updateData;
+
+        // CSS STUFF
+        document.getElementsByClassName('fire')[0].style.width = "100px";
+        document.getElementsByClassName('fire')[0].style.height = "100px";
+
+        function openLink(url) {
+            window.open(url);
+        }
+
+        window.addEventListener("DOMContentLoaded", (e) => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 201) {
+                    updateData = JSON.parse(this.responseText);
+                    let update = `<span>v${updateData.updateNumber}, ${updateData.updateDate}</span> <br> fix 1: ${updateData.u1} <br> fix 2: ${updateData.u2} <br> fix 3: ${updateData.u3}`;
+                    document.getElementById("updates").innerHTML = update;
+                }
+            };
+            xhttp.open("GET", "http://99.227.48.179:8000/updates", true);
+            xhttp.send();
+        });
+
+    </script>
+
+</body>
+
+</html>

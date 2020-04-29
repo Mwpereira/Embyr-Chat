@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Stylesheets-->
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/flame.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&amp;display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <title>Embyr</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Flame Icon -->
+        <div style="position:relative;" class="fire">
+            <div class="fire-left">
+                <div class="main-fire"></div>
+                <div class="particle-fire"></div>
+            </div>
+            <div class="fire-main">
+                <div class="main-fire"></div>
+                <div class="particle-fire"></div>
+            </div>
+            <div class="fire-right">
+                <div class="main-fire"></div>
+                <div class="particle-fire"></div>
+            </div>
+            <div class="fire-bottom">
+                <div class="main-fire"></div>
+            </div>
+        </div>
+
+        <p id="title">Embyr</p>
+
+        <!-- Validation Block -->
+        <div id="validation-block">
+            <p>Welcome Back!</p>
+
+            <form id="login-form">
+                <input autofocus class="input-bar" type="text" placeholder="Username">
+                <input class="input-bar" type="password" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+
+            <p>Not A Member?&nbsp;<a style="color: rgb(0, 204, 255); text-decoration: none;" href="signup.html">Sign
+                    Up</a></p>
+            
+            <p id="login-error-message">Username or Password Incorrect</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Scripts -->
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../scripts/validation.js"></script>
+    <script>if (window.module) module = window.module;</script>
+
+    <script>
+        document.getElementsByClassName('fire')[0].style.width = "100px";
+        document.getElementsByClassName('fire')[0].style.height = "100px";
+    </script>
+
+</body>
+
+</html>

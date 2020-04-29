@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS -->
+    <link href="../assets/css/chatx.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/flame.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/52ec1b5820.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <title>Embyr</title>
+</head>
+
+<body>
+    <!-- Audio -->
+    <audio id="audio">
+        <source src="../assets/notif.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <div class="wrapper">
+                    <div style="position:relative;" class="fire">
+                        <div class="fire-left">
+                            <div class="main-fire"></div>
+                            <div class="particle-fire"></div>
+                        </div>
+                        <div class="fire-main">
+                            <div class="main-fire"></div>
+                            <div class="particle-fire"></div>
+                        </div>
+                        <div class="fire-right">
+                            <div class="main-fire"></div>
+                            <div class="particle-fire"></div>
+                        </div>
+                        <div class="fire-bottom">
+                            <div class="main-fire"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="nav-text">Embyr</p>
+            </li>
+
+            <li id="profile-page-btn" class="nav-item">
+                <img class="avatar" src="">
+                <p id="client-accountname" class="nav-text"></p>
+            </li>
+
+            <li id="friend-req-btn" class="nav-item">
+                <i class="material-icons md-48">people_alt</i>
+                <p class="nav-text">Friends</p>
+            </li>
+
+            <li class="nav-item">
+                <i class="material-icons md-48">settings</i>
+                <p class="nav-text">Settings</p>
+            </li>
+
+            <li id="logout-btn" class="nav-item">
+                <i class="material-icons md-48">exit_to_app</i>
+                <p class="nav-text">Logout</p>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- MAIN VIEW -->
+    <main>
+        <div id="friend-profile-tab">
+            <img class="avatar" src="">
+            <p class="usertag"></p>
+
+            <div class="dropdown">
+                <button class="dropbtn">...</button>
+                <div class="dropdown-content">
+                    <a id="delete-friend-btn">Delete Friend</a>
+                </div>
+            </div>
+
+            <span id="ghost-mode" style="color: white; margin-left: auto; margin-right: 1rem; cursor: pointer;">
+                <i class="fas fa-ghost fa-2x"></i>
+            </span>
+
+
+
+
+
+        </div>
+
+        <div id="misc-tab">
+            <p class="usertag">Messages</p>
+        </div>
+
+        <div id="friends-list">
+
+        </div>
+
+        <div id="chat-view">
+
+        </div>
+
+        <div id="messaging-tab">
+            <form id="send-message-form">
+                <input autofocus type="text" placeholder="Send A Message...">
+            </form>
+        </div>
+
+
+        <!-- Friend Request UI -->
+        <div id="friends-view">
+            <h1>Incoming Requests</h1>
+            <hr>
+            </hr>
+            <ul id="incoming-requests-list"></ul>
+            <br><br><br><br>
+
+            <h1>Outgoing Requests</h1>
+            <hr>
+            <ul id="outgoing-requests-list"></ul>
+            <br><br><br><br>
+
+        </div>
+
+        <div id="friends-view-header">
+            <form id="add-friend-form">
+                <input type="text" placeholder="Add A Friend...">
+            </form>
+            <p id="request-exists-message">This person does not exists</p>
+        </div>
+
+
+        <!-- Profile Page UI -->
+        <div id="profile-view">
+            <div class="flex-wrapper">
+                <img id="profile-pic" src="../assets/imgs/background.jpg">
+                <input id="profile-pic-uploader" type="file" style="display: none">
+                <div>
+                    <p id="profile-name"></p>
+                    <select id="online-status-dropdown">
+                        <option value="online">Online</option>
+                        <option value="away">Away</option>
+                        <option value="offline">Offline</option>
+                    </select>
+                </div>
+            </div>
+
+            <hr style="margin-top: 1rem;">
+
+            <form id="password-change-form">
+                <h6>Change Password</h6>
+                <label>Current Password:</label>
+                <input type="password"><br>
+                <label>New Password</label>
+                <input type="password"><br>
+                <label>Confirm New Password</label>
+                <input type="password">
+                <input type="submit">
+            </form>
+
+            <hr style="margin-top: 1rem;">
+
+            <form id="delete-account-form">
+                <h6>Delete Account</h6>
+                <label>Enter Password</label>
+                <input id="delete-account-pw" type="password">
+                <input type="submit" value="Delete Account">
+            </form>
+        </div>
+
+        <div id="profile-view-header">
+            <p class="usertag">Profile Settings</p>
+        </div>
+    </main>
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+        onload="window.$ = window.jQuery = module.exports;"></script>
+
+    <script src="../scripts/view.js"></script>
+    <script src="../scripts/httpRequest.js"></script>
+    <script src="../scripts/controller.js"></script>
+    <script src="../scripts/ws.js"></script>
+</body>
+
+</html>

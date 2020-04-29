@@ -1,0 +1,106 @@
+*{margin: 0; padding: 0;}
+html, body{height: 100%; color: white;}
+
+#title{
+    font-family: 'Sigmar One', cursive;
+    color: white;
+    font-size: 50px;
+    position: relative;
+    top: -80px;
+    text-align: center;
+    margin-bottom: -80px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imgs/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+#validation-block{
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(28, 28, 33, 0.918);
+    text-align: center;
+}
+
+#validation-block > form{
+    display: flex;
+    flex-direction: column;
+}
+
+#validation-block > form > input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 110);
+    margin-bottom: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Sigmar One', cursive;
+}
+
+#validation-block > p:first-child{
+    font-family: 'Sigmar One', cursive;
+    font-size: 24px;
+}
+
+.input-bar{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px;
+    font-size: 24px;
+    font-family: 'Bitter';
+    color: white;
+    padding: 5px 5px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.479);
+    font-size: 20px;
+}
+
+#login-error-message{
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Bitter';
+    margin-top: 1rem;
+    display: none;
+}
+
+#signup-error-message{
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Bitter';
+    margin-top: 1rem;
+    display: none;
+}
+
+#password-match-error{
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Bitter';
+    margin-top: 1rem;
+    display: none;
+}
+
+#field-empty{
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Bitter';
+    margin-top: 1rem;
+    display: none;
+}

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Embyr", "Embyr\Embyr.shproj", "{2F6AAE0A-9ACF-4EFA-81D9-A3E3846B2126}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSocketServer", "..\Embyr - WebSocket Server\WebSocketServer.csproj", "{DE3E0FBF-A824-425E-9AC0-71394F30AD78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTPServerHost", "..\Embyr - Http Server\HTTPServerHost\HTTPServerHost.csproj", "{D6E63C6C-8525-4D6C-A001-23C4CACA7F07}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Embyr\Embyr.projitems*{2f6aae0a-9acf-4efa-81d9-a3e3846b2126}*SharedItemsImports = 13
+		Embyr\Embyr.projitems*{d6e63c6c-8525-4d6c-a001-23c4caca7f07}*SharedItemsImports = 4
+		Embyr\Embyr.projitems*{de3e0fbf-a824-425e-9ac0-71394f30ad78}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE3E0FBF-A824-425E-9AC0-71394F30AD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE3E0FBF-A824-425E-9AC0-71394F30AD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE3E0FBF-A824-425E-9AC0-71394F30AD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE3E0FBF-A824-425E-9AC0-71394F30AD78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E63C6C-8525-4D6C-A001-23C4CACA7F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E63C6C-8525-4D6C-A001-23C4CACA7F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E63C6C-8525-4D6C-A001-23C4CACA7F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E63C6C-8525-4D6C-A001-23C4CACA7F07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FC8D99C-73E3-431D-8250-1530EBC0FF93}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+﻿{
+  "profiles": {
+    "WebSocketServer": {
+      "commandName": "WebSocketServer",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "WebSocketServer": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "https://locahost:8002;http://*:8001",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

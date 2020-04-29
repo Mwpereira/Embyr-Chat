@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>2f6aae0a-9acf-4efa-81d9-a3e3846b2126</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Embyr</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Global\Decrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Global\Encrypt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Global\GlobalVar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Main\ConsoleControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Main\Host.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Main\Network.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Operations\FriendsList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Operations\FriendsOp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Operations\KeyTagID.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebSockets\WebSocketServerConnectionManager.cs" />
+  </ItemGroup>
+</Project>

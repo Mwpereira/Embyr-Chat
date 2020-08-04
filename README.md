@@ -3,10 +3,6 @@
 ## 📐 Project Setup
 ```
 git clone https://github.com/Mwpereira/Embyr-Chat.git
-```
-
-### Client
-```
 cd Embyr-Chat/client
 npm install
 ```

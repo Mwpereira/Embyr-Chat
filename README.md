@@ -33,5 +33,6 @@ npm run electron:serve
 
   ### Dependencies
   
-  * *axios* - promise based HTTP client to handle requests
+  * *axios* - for the promise based HTTP client to handle requests
+  * *jQuery* - for simple manipulation of DOM components
 

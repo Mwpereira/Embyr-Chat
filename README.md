@@ -36,3 +36,4 @@ npm run electron:serve
   * *axios* - for the promise based HTTP client to handle requests
   * *jQuery* - for simple manipulation of DOM components
 
+.

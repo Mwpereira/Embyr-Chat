@@ -1,6 +1,6 @@
 # 🔥 Embyr Chat
 
-Connecting with family and friends made simple and easy. Using HTTP requests and Websockets, Embyr provides fast and reliable service to keep you in touch and keeps you feeling safe with our strong encryption and advanced security features.
+Connecting with family and friends made simple and easy. Embyr provides fast and reliable service to keep you in touch and keeps you feeling safe with our strong encryption and advanced security features.
 
 ## 📐 Project Setup
 ```

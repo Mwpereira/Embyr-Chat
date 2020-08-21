@@ -14,7 +14,7 @@ npm install
 ### Client
 Develop using a Desktop Application *(Recommended)*
 ```
-npm run electron:serve
+npm start
 ```
 
 ### Server

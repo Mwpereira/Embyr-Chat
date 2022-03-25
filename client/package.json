@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "electron": "^8.2.0"
+    "electron": "^13.6.6"
   },
   "devDependencies": {
     "electron-packager": "^14.2.1"

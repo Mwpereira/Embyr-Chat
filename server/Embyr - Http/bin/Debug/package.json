@@ -9,6 +9,6 @@
   "author": "HimalP, MichaelP",
   "license": "ISC",
   "dependencies": {
-    "electron": "^7.1.9"
+    "electron": "^15.5.5"
   }
 }
